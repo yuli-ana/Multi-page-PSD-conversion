@@ -1,0 +1,23 @@
+/* Variables */
+
+/* Color palette */
+
+$primary-dark: #2c2c2c;
+$primary-light: #effdf3;
+$secondary-light: #fafafa;
+$accent-primary: #4ceea7;
+$accent-secondary: #fdfa69;
+
+/* Fonts */
+$roboto: "Roboto", sans-serif;
+$play-fair: "Playfair Display", serif;
+
+/* Text style */
+$letter-spacing: 1px;
+
+
+/* Mixins */
+
+@mixin fontSize($size-value) {
+  font-size: ($size-value / 10) * 1rem;
+}
