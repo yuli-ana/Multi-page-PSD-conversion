@@ -279,7 +279,6 @@ html {
 }
 
 body {
-  font-family: "Playfair Display", serif;
   font-family: "Roboto", sans-serif;
 }
 
@@ -289,7 +288,7 @@ ul {
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 img {
