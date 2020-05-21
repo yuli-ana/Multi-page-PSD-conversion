@@ -4,6 +4,6 @@ html {
 
 body {
   font-family: $roboto;
-  @include fontSize(16);
+  @include fontSize(18);
   line-height: $body-line-height;
 }

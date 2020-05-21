@@ -280,8 +280,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  line-height: 26px;
+  font-size: 1.8rem;
+  line-height: 30px;
 }
 
 .wrapper {
@@ -449,7 +449,7 @@ p {
 .btn {
   letter-spacing: 1px;
   background-color: #4ceea7;
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 
 footer {
@@ -551,6 +551,19 @@ footer {
   min-height: 60vh;
 }
 
+.featured {
+  padding: 80px 0;
+}
+
+.featured h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.featured p {
+  margin-bottom: 40px;
+}
+
 .latest__post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,9 +574,9 @@ footer {
 }
 
 .latest__img--left {
-  margin: -20px auto 0 -7.5%;
+  margin: 0 auto 0 -7.5%;
 }
 
-.latest__img--right {
-  margin: 0 -7.5% -20px auto;
+.gallery {
+  padding: 80px 0;
 }
