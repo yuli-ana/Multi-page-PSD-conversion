@@ -6,42 +6,49 @@
 
 .row {
   display: flex;
-}
+  margin: 0 -20px;
 
-.row-wrap {
-  flex-wrap: wrap;
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .col {
   margin: 0 20px;
-}
 
-.col-30 {
-  flex: 0 0 30%;
-  max-width: calc(30% - 40px);
-}
+  &--30 {
+    flex: 0 0 30%;
+    max-width: calc(30% - 40px);
+  }
 
-.col-33 {
-  flex: 0 0 33.333%;
-  max-width: calc(33.333% - 40px);
-}
+  &--33 {
+    flex: 0 0 33.333%;
+    max-width: calc(33.333% - 40px);
+  }
 
-.col-40 {
-  flex: 0 0 40%;
-  max-width: calc(40% - 40px);
-}
+  &--40 {
+    flex: 0 0 40%;
+    max-width: calc(40% - 40px);
+  }
 
-.col-50 {
-  flex: 0 0 50%;
-  max-width: calc(50% - 40px);
-}
+  &--50 {
+    flex: 0 0 50%;
+    max-width: calc(50% - 40px);
+  }
 
-.col-60 {
-  flex: 0 0 60%;
-  max-width: calc(60% - 40px);
-}
+  &--60 {
+    flex: 0 0 60%;
+    max-width: calc(60% - 40px);
+  }
 
-.col-70 {
-  flex: 0 0 70%;
-  max-width: calc(70% - 40px);
+  &--70 {
+    flex: 0 0 70%;
+    max-width: calc(70% - 40px);
+  }
+
+  &--80 {
+    flex: 0 0 80%;
+    max-width: calc(80% - 40px);
+  }
+
 }

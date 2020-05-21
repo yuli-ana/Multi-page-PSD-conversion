@@ -13,19 +13,21 @@
 
 <body>
     <!-- header - section -->
-    <header>
+    <header class="header">
         <div class="wrapper">
-            <nav>
-                <ul class="row">
-                    <li class="col"><a href="#">home</a></li>
-                    <li class="col"><a href="#">about</a></li>
-                    <li class="col"><a href="blog.html">blog</a></li>
-                    <li class="col"><a href="contact.html">contact</a></li>
+            <nav class="nav">
+                <ul class="nav__list row">
+                    <li class="nav__item nav__item--active col"><a href="#">home</a></li>
+                    <li class="nav__item col"><a href="#">about</a></li>
+                    <li class="nav__item col"><a href="blog.html">blog</a></li>
+                    <li class="nav__item col"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
 
-            <h1>Captured</h1>
-            <div>
+            <div class="header__title row">
+                <h1>Captured</h1>
+            </div>
+            <div class="header__overlay">
                 <img src="./images/header-box-image.jpg" alt="">
             </div>
         </div>
@@ -34,23 +36,19 @@
     <!-- main - section -->
     <main>
         <!-- section - about -->
-        <section>
+        <section class="about">
             <div class="wrapper">
                 <article>
-                    <div class="row">
-                        <div class='col'>
+                    <div class="about__title row">
+                        <div class='col col--80'>
                             <h2>What is captured?</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quas beatae! Ut
                                 praesentium
                                 pariatur voluptates consectetur! Eaque veritatis earum dolores mollitia ratione beatae
                                 tenetur
-                                tempore odio, a labore esse velit odit, laboriosam incidunt nesciunt architecto?
-                                Repudiandae
-                                mollitia ut amet eaque explicabo repellat totam illum culpa odit ipsam tempore
-                                reiciendis
-                                dicta
-                                at nobis itaque velit id quidem, vero similique et ratione?</p>
-                            <a class="btn" href="">find out more</a>
+                                tempore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                                quod?Lorem ipsum dolor sit amet. </p>
+                            <a class="about__btn btn shadow--left" href="">find out more</a>
                         </div>
                     </div>
                 </article>
@@ -61,32 +59,38 @@
         <section>
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-50">
+                    <div class="col col--50">
                         <img src="./images/left-image.jpg" alt="">
                     </div>
-                    <div class="col-50">
+                    <div class="col col--50">
                         <article>
-                            <h3>Unlock your skills</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis similique aspernatur
-                                earum! Minus, ad vel. Pariatur iusto voluptatem quia tempora? Nam amet rem incidunt
-                                aliquid, neque beatae recusandae impedit hic magni quas minus exercitationem sunt
-                                aliquam qui ab quod?</p>
-                            <a class="btn" href="">read more</a>
+                            <div>
+                                <h3>Unlock your skills</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis similique
+                                    aspernatur
+                                    earum! Minus, ad vel. Pariatur iusto voluptatem quia tempora? Nam amet rem incidunt
+                                    aliquid, neque beatae recusandae impedit hic magni quas minus exercitationem sunt
+                                    aliquam qui ab quod?</p>
+                                <a class="btn" href="">read more</a>
+                            </div>
                         </article>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-50">
+                    <div class="col col--50">
                         <article>
-                            <h3>Unlock your skills</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis similique aspernatur
-                                earum! Minus, ad vel. Pariatur iusto voluptatem quia tempora? Nam amet rem incidunt
-                                aliquid, neque beatae recusandae impedit hic magni quas minus exercitationem sunt
-                                aliquam qui ab quod?</p>
-                            <a class="btn" href="">read more</a>
+                            <div>
+                                <h3>Unlock your skills</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis similique
+                                    aspernatur
+                                    earum! Minus, ad vel. Pariatur iusto voluptatem quia tempora? Nam amet rem incidunt
+                                    aliquid, neque beatae recusandae impedit hic magni quas minus exercitationem sunt
+                                    aliquam qui ab quod?</p>
+                                <a class="btn" href="">read more</a>
+                            </div>
                         </article>
                     </div>
-                    <div class="col-50">
+                    <div class="col col--50">
                         <img src="./images/right-image.jpg" alt="">
                     </div>
                 </div>
@@ -95,10 +99,10 @@
         </section>
 
         <!-- section - features-->
-        <section>
+        <section class="features">
             <div class="wrapper">
-                <ul class="row row-wrap">
-                    <li class="row col-50">
+                <ul class="row row--wrap">
+                    <li class="row col col--50">
                         <div><i class="fas fa-camera"></i></div>
                         <div>
                             <h3>Top picks</h3>
@@ -107,7 +111,7 @@
                                 alias unde deserunt nesciunt est nisi iusto.</p>
                         </div>
                     </li>
-                    <li class="row col-50">
+                    <li class="row col col--50">
                         <div><i class="fas fa-sticky-note"></i></div>
                         <div>
                             <h3>Community</h3>
@@ -116,7 +120,7 @@
                                 alias unde deserunt nesciunt est nisi iusto.</p>
                         </div>
                     </li>
-                    <li class="row col-50">
+                    <li class="row col col--50">
                         <div><i class="fas fa-users"></i></div>
                         <div>
                             <h3>Blog</h3>
@@ -125,7 +129,7 @@
                                 alias unde deserunt nesciunt est nisi iusto.</p>
                         </div>
                     </li>
-                    <li class="row col-50">
+                    <li class="row col col--50">
                         <div><i class="fas fa-phone"></i></div>
                         <div>
                             <h3>Get in touch</h3>
@@ -142,13 +146,13 @@
         </section>
 
         <!-- section - featured - post  -->
-        <section>
+        <section class="featured">
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-30">
+                    <div class="col col--30">
                         <img src="./images/small-box.jpg" alt="">
                     </div>
-                    <div class="col-70">
+                    <div class="col col--70">
                         <article>
                             <h2>This month profile</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, nulla? Quaerat
@@ -164,13 +168,13 @@
         </section>
 
         <!-- section - gallery -->
-        <section>
+        <section class="gallery">
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-33">
+                    <div class="col col--33">
                         <img src="./images/gallery-image-1.jpg" alt="">
                     </div>
-                    <div class="col-33">
+                    <div class="col col--33">
                         <img src="./images/gallery-image-2.jpg" alt="">
                     </div>
                     <div class="col-33">

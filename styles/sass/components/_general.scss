@@ -15,4 +15,28 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: $primary-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.btn {
+  margin: 0;
+  font-family: $play-fair;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+.about,
+.featured,
+.features {
+  background-color: $primary-light;
 }
