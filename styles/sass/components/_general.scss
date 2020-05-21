@@ -40,3 +40,15 @@ p {
 .features {
   background-color: $primary-light;
 }
+
+.shadow--left {
+  box-shadow: 25px 25px $accent-secondary;
+}
+
+.shadow--right {
+  box-shadow: -25px 25px $accent-secondary;
+}
+
+.overflow--hiddden {
+  overflow: hidden;
+}

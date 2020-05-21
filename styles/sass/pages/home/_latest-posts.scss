@@ -1,0 +1,15 @@
+.latest {
+  &__post {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    &--left {
+      margin: -20px auto 0 -7.5%;
+    }
+    &--right {
+      margin: 0 -7.5% -20px auto;
+    }
+  }
+}
