@@ -1,0 +1,23 @@
+@import "form";
+
+.contact__footer {
+  padding: 100px 0;
+
+  &--left {
+    padding: 20px;
+
+    p {
+      margin: 20px 0;
+      text-transform: uppercase;
+      font-family: $play-fair;
+      letter-spacing: $space-2;
+      @include fontSize(20);
+    }
+
+    address {
+      font-style: normal;
+      @include fontSize(16);
+      letter-spacing: $space-2;
+    }
+  }
+}
