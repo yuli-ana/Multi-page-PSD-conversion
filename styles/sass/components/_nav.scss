@@ -2,13 +2,13 @@
   &__list {
     &.row {
       justify-content: flex-end;
-      height: 50px;
+      height: 60px;
       align-items: center;
     }
   }
 
   &__item {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 
     &--active {
       position: relative;
@@ -27,5 +27,6 @@
 
   &__item a {
     text-transform: uppercase;
+    letter-spacing: $space-1;
   }
 }

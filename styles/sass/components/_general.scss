@@ -25,14 +25,16 @@ h4,
 h5,
 h6,
 nav,
-.btn {
+.btn,
+p {
   margin: 0;
   font-family: $play-fair;
   text-transform: uppercase;
 }
 
 p {
-  margin: 0;
+  text-transform: lowercase;
+  font-family: $roboto;
 }
 
 .about,
@@ -41,14 +43,25 @@ p {
   background-color: $primary-light;
 }
 
-.shadow--left {
-  box-shadow: 25px 25px $accent-secondary;
+.latest,
+.gallery,
+.contact__form {
+  background-color: $secondary-light;
 }
 
 .shadow--right {
+  box-shadow: 25px 25px $accent-secondary;
+}
+
+.shadow--left {
   box-shadow: -25px 25px $accent-secondary;
 }
 
-.overflow--hiddden {
-  overflow: hidden;
+span {
+  display: block;
+}
+
+/* Check it out later */
+.nav__item {
+  flex: 0 0 auto;
 }

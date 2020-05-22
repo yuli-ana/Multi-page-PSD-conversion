@@ -1,6 +1,10 @@
-footer {
+.footer {
   background: $primary-dark;
   color: $primary-light;
   padding: 10px 0;
   text-align: center;
+
+  p {
+    text-transform: capitalize;
+  }
 }
