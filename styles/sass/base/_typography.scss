@@ -6,4 +6,5 @@ body {
   font-family: $roboto;
   @include fontSize(18);
   line-height: $body-line-height;
+  background-color: $primary-light;
 }
