@@ -1,5 +1,3 @@
-@import "form";
-
 .contact__footer {
   padding: 100px 0;
 
@@ -17,7 +15,11 @@
     address {
       font-style: normal;
       @include fontSize(16);
-      letter-spacing: $space-2;
+      letter-spacing: $space-1;
     }
+  }
+
+  form {
+    margin-top: -280px;
   }
 }
