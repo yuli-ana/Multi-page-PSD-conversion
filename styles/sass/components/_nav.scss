@@ -1,9 +1,14 @@
 .nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
   &__list {
     &.row {
       justify-content: flex-end;
-      height: 60px;
       align-items: center;
+      height: 60px;
     }
   }
 
