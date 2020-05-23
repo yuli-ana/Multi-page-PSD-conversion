@@ -1,17 +1,36 @@
 .home {
   &__header {
-    // position: relative;
+    position: relative;
     background-image: url("../images/header-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vh;
+    z-index: 1;
 
     .wrapper {
       position: relative;
     }
   }
 
-  h1 {
-    z-index: 1;
+  .flex {
+    align-items: flex-end;
+  }
+
+  &__title {
+    min-height: 65vh;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    z-index: -1;
+    width: 40%;
+
+    img {
+      border-top: 40px solid $accent-secondary;
+      border-left: 40px solid $accent-secondary;
+      border-bottom: 40px solid $accent-secondary;
+    }
   }
 }
