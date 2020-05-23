@@ -26,27 +26,33 @@ $body-line-height: 30px;
 }
 
 /* Responsive web design */
+// Defining values
+$screen-xxl: 1100px;
+$screen-xl: 940px;
+$screen-md: 768px;
+$screen-sm: 940px;
+$screen-xs: 940px;
 
 @mixin tablet-landscape {
-  @media only screen and(max-width: 1100px) {
+  @media only screen and(max-width: $screen-xxl) {
     @content;
   }
 }
 
-@mixin tablet-landscape-small {
-  @media only screen and (max-width: 940px) {
+@mixin tablet-landscape-sm {
+  @media only screen and (max-width: $screen-xl) {
     @content;
   }
 }
 
 @mixin tablet-portrait {
-  @media only screen and(max-width: 768px) {
+  @media only screen and(max-width: $screen-md) {
     @content;
   }
 }
 
 @mixin phone {
-  @media only screen and(max-width: 480px) {
+  @media only screen and(max-width: $screen-xs) {
     @content;
   }
 }
