@@ -1,6 +1,10 @@
 .featured {
   padding: 80px 0;
 
+  &__article {
+    padding-left: 40px;
+  }
+
   h2 {
     margin-bottom: 30px;
   }
