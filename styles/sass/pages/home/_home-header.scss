@@ -1,0 +1,17 @@
+.home {
+  &__header {
+    // position: relative;
+    background-image: url("../images/header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+
+    .wrapper {
+      position: relative;
+    }
+  }
+
+  h1 {
+    z-index: 1;
+  }
+}

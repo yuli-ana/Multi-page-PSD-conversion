@@ -1,0 +1,40 @@
+.latest {
+  &__post {
+    display: flex;
+    align-items: center;
+
+    &--right,
+    &--left {
+      padding: 60px 0;
+    }
+
+    &--right p,
+    &--left p {
+      margin: 25px 0;
+    }
+
+    &--right h3,
+    &--left h3 {
+      letter-spacing: $space-1;
+    }
+
+    &--left {
+      text-align: right;
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  &__img {
+    &--left {
+      margin-left: calc(-17.241379% - 20px);
+      margin-right: auto;
+    }
+
+    &--right {
+      margin-right: calc(-17.25% - 20px);
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.features {
+  &__list {
+    padding: 120px 0 80px;
+  }
+
+  &__list li:first-child,
+  &__list li:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  &__blog h3 {
+    letter-spacing: $space-1;
+    margin-bottom: 15px;
+  }
+
+  i {
+    background: $accent-primary;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__background {
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+  }
+}
