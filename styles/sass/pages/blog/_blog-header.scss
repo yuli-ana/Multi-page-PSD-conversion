@@ -1,0 +1,14 @@
+.blog {
+  &__header {
+    background-image: url("../images/blog-header.jpg");
+
+    .wrapper {
+      position: relative;
+    }
+  }
+
+  &__title {
+    min-height: 60vh;
+    @include fontSize(40);
+  }
+}

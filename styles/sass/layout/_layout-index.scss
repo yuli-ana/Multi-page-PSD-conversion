@@ -17,13 +17,18 @@
     align-items: center;
   }
 
-  &--column {
-    flex-direction: column;
+  &--end {
+    justify-content: flex-end;
   }
 }
 
 .col {
   margin: 0 20px;
+
+  &--20 {
+    flex: 0 1 20%;
+    max-width: calc(20% - 40px);
+  }
 
   &--30 {
     flex: 0 1 30%;
