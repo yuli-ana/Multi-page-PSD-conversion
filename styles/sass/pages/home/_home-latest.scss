@@ -18,8 +18,14 @@
       letter-spacing: $space-1;
     }
 
+    &--right {
+      padding-left: 100px;
+    }
+
     &--left {
       text-align: right;
+      padding-right: 100px;
+
       p {
         text-align: left;
       }
