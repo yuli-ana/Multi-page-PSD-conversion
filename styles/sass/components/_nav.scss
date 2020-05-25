@@ -6,7 +6,6 @@
 
   &__list {
     &.row {
-      justify-content: flex-end;
       align-items: center;
       height: 60px;
     }
@@ -28,10 +27,15 @@
         background: $accent-primary;
       }
     }
+
+    a {
+      text-transform: uppercase;
+      letter-spacing: $space-1;
+    }
   }
 
-  &__item a {
-    text-transform: uppercase;
-    letter-spacing: $space-1;
-  }
+  // &__item a {
+  //   text-transform: uppercase;
+  //   letter-spacing: $space-1;  /* Delete */
+  // }
 }

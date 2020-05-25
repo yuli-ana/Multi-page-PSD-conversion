@@ -5,8 +5,8 @@
       position: relative;
     }
 
-    h1 {
-      @include fontSize(80);
-    }
+    // h1 {
+    //   @include fontSize(80); /* Delete */
+    // }
   }
 }

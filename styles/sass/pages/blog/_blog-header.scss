@@ -6,9 +6,4 @@
       position: relative;
     }
   }
-
-  &__title {
-    min-height: 60vh;
-    @include fontSize(40);
-  }
 }

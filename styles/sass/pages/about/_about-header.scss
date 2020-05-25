@@ -1,7 +1,5 @@
 .about {
-  &__header,
-  &--title {
-    min-height: 100vh;
+  &__header {
     .wrapper {
       position: relative;
     }

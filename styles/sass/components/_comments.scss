@@ -8,11 +8,15 @@
 
   &__item:first-child {
     margin-bottom: 50px;
-  }
 
-  &__item {
     .col--80 p:first-child {
       margin-bottom: 10px;
     }
   }
 }
+
+// &__item {  /* Delete */
+//   .col--80 p:first-child {
+//     margin-bottom: 10px;
+//   }
+// }
