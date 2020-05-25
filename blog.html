@@ -24,22 +24,22 @@
                         <li class="nav__item col"><a href="contact.html">contact</a></li>
                     </ul>
                 </nav>
-                <div class="blog__title flex">
-                    <h1>Blog</h1>
-                </div>
+            </div>
+            <div class="blog__title flex">
+                <h1>Blog</h1>
             </div>
         </header>
 
         <main>
             <section class="blog__section">
                 <div class="wrapper">
-                    <div class="row">
+                    <div class="row row--direction">
                         <div class="blog__aside col col--30">
                             <aside>
-                                <div>
+                                <div class="blog__aside--1">
                                     <img src="./images/side-blog-image.jpg" alt="">
                                 </div>
-                                <div class="blog__aside--gap">
+                                <div class="blog__aside--gap blog__aside--1">
                                     <article>
                                         <h3>About Captured</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore
@@ -68,7 +68,7 @@
                         </div>
                         <div class="blog__post col col--70">
                             <article>
-                                <div class="col">
+                                <div>
                                     <img class="blog__image shadow--left " src="./images/blog-post-image.jpg" alt="">
                                 </div>
                                 <div class="blog__post--inner blog__post--accent">
@@ -106,7 +106,7 @@
                                         cumque!</p>
                                 </div>
                                 <footer>
-                                    <div class="comments">
+                                    <div class="blog__comments comments">
                                         <h3 class="col">Comments:</h3>
                                         <ul class="comments__list row row--wrap">
                                             <li class="comments__item row col col--100">
@@ -152,7 +152,7 @@
                                     <div class="row">
                                         <div class="col col--100">
                                             <form>
-                                                <div class="row">
+                                                <div class="row row--wrap">
                                                     <div class="col col--50">
                                                         <label class="visually-hidden" for="name">Name</label>
                                                         <input type="text" id="name" placeholder="Name" required>
