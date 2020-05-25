@@ -3,14 +3,17 @@
     display: flex;
     align-items: center;
 
-    &--right,
-    &--left {
-      padding: 60px 0;
+    &--right {
+      // padding: 40px 0; /* Delete */
+      padding: 50px;
     }
 
     &--right p,
     &--left p {
       margin: 25px 0;
+      @include tablet-landscape {
+        margin: 15px 0;
+      }
     }
 
     &--right h3,
@@ -19,28 +22,123 @@
     }
 
     &--right {
-      padding-left: 100px;
+      // padding-left: 100px; /* Delete */
+      @include tablet-landscape {
+        padding: 0 0 0 50px;
+      }
     }
 
     &--left {
       text-align: right;
-      padding-right: 100px;
+      padding: 50px;
+      // padding-right: 100px; /* Delete */
+      // padding-top: 20px; /* Delete */
+      // @include tablet-landscape { /* Delete */
+      //   padding: 0 50px 0 0;
+      // }
 
       p {
         text-align: left;
+      }
+    }
+
+    @include tablet-landscape-sm {
+      &--left,
+      &--right {
+        padding: 0;
+      }
+
+      &--left {
+        text-align: left;
+      }
+
+      &--order {
+        order: -1;
       }
     }
   }
 
   &__img {
     &--left {
-      margin-left: calc(-17.241379% - 20px);
+      margin-left: calc(-17.25% - 20px);
       margin-right: auto;
+      margin-top: -35px;
     }
 
     &--right {
       margin-right: calc(-17.25% - 20px);
       margin-left: auto;
+      margin-top: 65px;
+    }
+
+    @include tablet-landscape {
+      &--left,
+      &--right {
+        margin: 0;
+      }
+    }
+  }
+
+  @include tablet-landscape {
+    padding: 80px 0;
+    .row {
+      align-items: center;
+    }
+
+    .row:first-of-type {
+      margin-bottom: 50px;
+    }
+
+    // &__img { /* Delete */
+    //   &--left,
+    //   &--right {
+    //     margin: 0;
+    //   }
+    // }
+  }
+
+  // @include tablet-landscape-sm {
+  //   &__post {
+  //     &--right,
+  //     &--left {
+  //       padding: 0;
+  //     }
+
+  //     &--left {
+  //       text-align: left;
+  //     }
+
+  //     &--order {
+  //       order: -1;
+  //     }
+  //   }
+
+  //   &__img {
+  //     &--left,
+  //     &--right {
+  //       margin-bottom: 50px;
+  //     }
+  //   }
+  // }
+
+  @include tablet-landscape-sm {
+    &__img {
+      &--left,
+      &--right {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    padding: 60px 0;
+    .row {
+      flex-direction: column;
+    }
+
+    .col--50 {
+      flex-basis: 100%;
+      max-width: calc(100% - 40px);
     }
   }
 }

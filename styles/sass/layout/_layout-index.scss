@@ -2,6 +2,20 @@
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
+
+  @include tablet-portrait-sm {
+    width: 90%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auto {
+  flex: 0 1 auto;
 }
 
 .row {

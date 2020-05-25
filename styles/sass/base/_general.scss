@@ -10,6 +10,7 @@ li {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -34,14 +35,43 @@ nav,
 h1 {
   @include fontSize(120);
   text-transform: uppercase;
+  line-height: 1.4;
+
+  @include tablet-landscape {
+    @include fontSize(90);
+  }
+  
+  @include tablet-landscape-sm {
+    @include fontSize(70);
+  }
+
+  @include phone {
+    @include fontSize(50);
+  }
 }
 
 h2 {
   @include fontSize(40);
+
+  @include tablet-landscape {
+    @include fontSize(30);
+  }
+
+  @include phone {
+    @include fontSize(20);
+  }
 }
 
 h3 {
   @include fontSize(23);
+
+  @include tablet-landscape-sm {
+    @include fontSize(18);
+  }
+
+  @include phone {
+    @include fontSize(16);
+  }
 }
 
 p {
@@ -62,10 +92,30 @@ p {
 
 .shadow--right {
   box-shadow: 35px 35px $accent-secondary;
+
+  @include tablet-landscape {
+    box-shadow: 20px 20px $accent-secondary;
+  }
+
+  @include phone {
+    box-shadow: none;
+  }
 }
 
 .shadow--left {
   box-shadow: -35px 35px $accent-secondary;
+
+  @include tablet-landscape {
+    box-shadow: -20px 20px $accent-secondary;
+  }
+
+  @include tablet-landscape-sm {
+    box-shadow: 20px 20px #fdfa69;
+  }
+
+  @include phone {
+    box-shadow: none;
+  }
 }
 
 span {
@@ -74,15 +124,4 @@ span {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-/* Check it out later */
-.nav__item {
-  flex: 0 1 auto;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

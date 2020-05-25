@@ -7,17 +7,19 @@
     min-height: 80vh;
     z-index: 1;
 
-    .wrapper {
-      position: relative;
+    &.row {
+      &--center {
+        align-items: flex-end;
+      }
     }
-  }
 
-  .flex {
-    align-items: flex-end;
-  }
+    .wrapper {
+      position: absolute;
+    }
 
-  &__title {
-    min-height: 65vh;
+    @include phone {
+      min-height: 60vh;
+    }
   }
 
   &__overlay {
@@ -26,11 +28,26 @@
     right: 0;
     z-index: -1;
     width: 40%;
+    @include tablet-landscape {
+      top: 240px;
+    }
+    @include tablet-landscape-sm {
+      top: 315px;
+    }
+
+    @include tablet-portrait {
+      top: 380px;
+    }
 
     img {
       border-top: 40px solid $accent-secondary;
       border-left: 40px solid $accent-secondary;
       border-bottom: 40px solid $accent-secondary;
+      @include tablet-landscape-sm {
+        border-top: 25px solid $accent-secondary;
+        border-left: 25px solid $accent-secondary;
+        border-bottom: 25px solid $accent-secondary;
+      }
     }
   }
 }

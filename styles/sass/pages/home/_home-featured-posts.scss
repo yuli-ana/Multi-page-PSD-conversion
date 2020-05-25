@@ -3,6 +3,11 @@
 
   &__article {
     padding-left: 40px;
+
+    @include tablet-portrait {
+      padding: 0;
+      margin-top: 50px;
+    }
   }
 
   h2 {
@@ -11,5 +16,29 @@
 
   p {
     margin-bottom: 40px;
+
+    @include tablet-landscape-sm {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet-landscape-sm {
+    .row {
+      align-items: center;
+    }
+  }
+
+  @include tablet-portrait {
+    padding: 60px 0;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .col--30,
+    .col--70 {
+      flex-basis: 100%;
+      max-width: calc(100% - 40px);
+    }
   }
 }

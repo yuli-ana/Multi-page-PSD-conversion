@@ -1,5 +1,8 @@
 .about {
   padding: 150px 0;
+  @include tablet-landscape {
+    padding: 80px 0;
+  }
 
   &__title {
     text-align: center;
@@ -12,9 +15,22 @@
     }
 
     p {
-      line-height: $line-height;
       text-align: left;
       margin-bottom: 30px;
+      @include tablet-landscape-sm {
+        text-align: center;
+      }
     }
+
+    @include tablet-portrait {
+      .col--80 {
+        flex-basis: 100%;
+        max-width: calc(100% - 40px);
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    padding: 60px 0;
   }
 }

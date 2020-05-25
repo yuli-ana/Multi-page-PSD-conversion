@@ -4,22 +4,70 @@
   &--left {
     padding: 20px;
 
+    @include tablet-portrait-sm {
+      padding: 20px 0;
+    }
+
     p {
+      @include fontSize(20);
       margin: 20px 0;
       text-transform: uppercase;
       font-family: $play-fair;
       letter-spacing: $space-2;
-      @include fontSize(20);
     }
 
     address {
-      font-style: normal;
       @include fontSize(16);
+      font-style: inherit;
       letter-spacing: $space-1;
     }
   }
 
   form {
     margin-top: -280px;
+
+    @include tablet-landscape {
+      margin-top: 0;
+      padding: 40px;
+    }
+
+    @include tablet-landscape-sm {
+      padding: 20px;
+      box-shadow: none;
+      border: 5px solid $accent-secondary;
+    }
+
+    @include tablet-portrait-sm {
+      .col--50 {
+        flex-basis: 100%;
+        max-width: calc(100% - 40px);
+      }
+    }
+  }
+
+  @include tablet-landscape {
+    padding: 80px 0;
+  }
+
+  @include tablet-landscape-sm {
+    .row {
+      &--direction {
+        flex-direction: column;
+
+        .col--30,
+        .col--70 {
+          flex-basis: 100%;
+          max-width: calc(100% - 40px);
+        }
+      }
+    }
+  }
+
+  // @include tablet-landscape { /* Delete */
+  //   padding: 80px 0;
+  // }
+
+  @include tablet-portrait {
+    padding: 60px 0;
   }
 }

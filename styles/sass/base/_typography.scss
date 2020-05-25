@@ -3,8 +3,17 @@ html {
 }
 
 body {
+  background-color: $primary-light;
   font-family: $roboto;
   @include fontSize(18);
-  line-height: $body-line-height;
-  background-color: $primary-light;
+  line-height: 1.2;
+
+  @include tablet-landscape {
+    @include fontSize(16);
+    line-height: 1.6;
+  }
+
+  @include tablet-landscape-sm {
+    @include fontSize(14);
+  }
 }

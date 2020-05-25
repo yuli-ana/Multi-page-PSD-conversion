@@ -4,18 +4,48 @@
 
     .row {
       align-items: flex-start;
+
+      @include tablet-landscape-sm {
+        &--direction {
+          flex-direction: column;
+          align-items: center;
+
+          .col--30,
+          .col--70 {
+            flex: 0 0 100%;
+            max-width: calc(100% - 40px);
+          }
+        }
+      }
     }
 
     form {
       background-color: transparent;
       margin-top: 0;
       padding: 0;
+
+      @include tablet-landscape-sm {
+        &.row {
+          flex-direction: row;
+        }
+      }
+
+      @include tablet-portrait-sm {
+        .col--50 {
+          flex-basis: 100%;
+          max-width: calc(100% - 40px);
+        }
+      }
     }
   }
 
   &__post img,
   &__aside img {
     max-width: none;
+
+    @include tablet-landscape-lg {
+      max-width: 100%;
+    }
   }
 
   &__post {
@@ -25,6 +55,11 @@
       border-left: 4px solid $accent-secondary;
       border-bottom: 4px solid $accent-secondary;
       margin-left: 10px;
+
+      @include tablet-landscape-lg {
+        border-left: none;
+        margin: 0;
+      }
     }
 
     &--inner {
@@ -33,20 +68,41 @@
       & p:first-of-type {
         margin: 20px 0 50px;
       }
+
+      @include tablet-landscape-sm {
+        padding: 25px 0;
+      }
+    }
+
+    @include tablet-landscape-lg {
+      margin: 0;
     }
   }
 
   &__image {
-    margin-left: 25px;
+    margin-left: 45px;
+
+    @include tablet-landscape-sm {
+      margin: 0;
+    }
   }
+
   &__aside {
     background-color: $secondary-light;
     &--gap {
       padding: 30px;
+
+      @include tablet-landscape-sm {
+        padding: 0;
+      }
     }
 
     article:first-child {
       margin-bottom: 50px;
+
+      @include tablet-landscape-sm {
+        margin-bottom: 20px;
+      }
     }
 
     article {
@@ -65,11 +121,66 @@
     img {
       margin-left: -60%;
       margin-top: -20px;
+
+      @include tablet-landscape-lg {
+        margin: 0;
+      }
     }
 
     h3 {
       margin-bottom: 10px;
       letter-spacing: $space-1;
+    }
+
+    @include tablet-landscape-sm {
+      margin-bottom: 50px;
+
+      aside {
+        display: flex;
+        align-items: center;
+      }
+
+      &--1,
+      &--2 {
+        flex: 0 1 auto;
+        margin: 20px;
+      }
+    }
+
+    @include tablet-portrait {
+      aside {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    &__section {
+      padding: 60px 0;
+    }
+    
+    &__comments {
+      .row {
+        flex-direction: column;
+      }
+
+      .col--20 {
+        margin-bottom: 20px;
+      }
+
+      .col--20,
+      .col--80 {
+        flex-basis: 100%;
+        max-width: calc(100% - 40px);
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    &__comments {
+      h3 {
+        margin-bottom: 30px;
+      }
     }
   }
 }
