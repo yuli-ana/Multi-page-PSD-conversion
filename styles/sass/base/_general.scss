@@ -38,15 +38,15 @@ h1 {
   line-height: 1.4;
 
   @include tablet-landscape {
-    @include fontSize(90);
+    @include fontSize(80);
   }
-  
+
   @include tablet-landscape-sm {
-    @include fontSize(70);
+    @include fontSize(60);
   }
 
   @include phone {
-    @include fontSize(50);
+    @include fontSize(40);
   }
 }
 
