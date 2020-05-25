@@ -1,12 +1,5 @@
 .contact {
   &__header {
     background-image: url("../images/contact-header.jpg");
-    .wrapper {
-      position: relative;
-    }
-
-    // h1 {
-    //   @include fontSize(80); /* Delete */
-    // }
   }
 }

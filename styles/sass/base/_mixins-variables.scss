@@ -15,8 +15,7 @@ $play-fair: "Playfair Display", serif;
 /* Text style */
 $space-1: 1px;
 $space-2: 2px;
-// $line-height: 32px; /* Delete */
-// $body-line-height: 30px;  /* Delete */
+
 
 /* Responsive web design breakpoints*/
 $screen-xxxl: 1280px;
@@ -27,6 +26,7 @@ $screen-sm: 640px;
 $screen-xs: 480px;
 
 /* Mixins */
+
 @mixin fontSize($size-value) {
   font-size: ($size-value / 10) * 1rem;
 }

@@ -6,17 +6,13 @@
     @include fontSize(30);
   }
 
-  &__item:first-child {
-    margin-bottom: 50px;
-
-    .col--80 p:first-child {
+  &__item {
+    p {
       margin-bottom: 10px;
     }
   }
-}
 
-// &__item {  /* Delete */
-//   .col--80 p:first-child {
-//     margin-bottom: 10px;
-//   }
-// }
+  &__item:first-child {
+    margin-bottom: 50px;
+  }
+}

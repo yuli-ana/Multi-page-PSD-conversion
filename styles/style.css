@@ -354,19 +354,19 @@ h1 {
 
 @media only screen and (max-width: 1100px) {
   h1 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 }
 
 @media only screen and (max-width: 940px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -600,6 +600,8 @@ span {
   top: 0;
   right: 0;
   z-index: 100;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
 }
 
 .nav__list.row {
@@ -741,36 +743,43 @@ form input[type="email"] {
   font-size: 3rem;
 }
 
+.comments__item p {
+  margin-bottom: 10px;
+}
+
 .comments__item:first-child {
   margin-bottom: 50px;
 }
 
-.comments__item:first-child .col--80 p:first-child {
-  margin-bottom: 10px;
-}
-
 .home__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
   background-image: url("../images/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 80vh;
   z-index: 1;
+  padding-bottom: 40px;
 }
 
-.home__header.row--center {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.home__header .wrapper {
-  position: absolute;
+@media only screen and (max-width: 768px) {
+  .home__header {
+    background-position-x: 30%;
+    min-height: 60vh;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .home__header {
-    min-height: 60vh;
+    background-position-x: 20%;
   }
 }
 
@@ -796,7 +805,7 @@ form input[type="email"] {
 
 @media only screen and (max-width: 768px) {
   .home__overlay {
-    top: 380px;
+    visibility: hidden;
   }
 }
 
@@ -1148,10 +1157,6 @@ form input[type="email"] {
   background-image: url("../images/blog-header.jpg");
 }
 
-.blog__header .wrapper {
-  position: relative;
-}
-
 .blog__section {
   padding: 100px 0;
 }
@@ -1374,10 +1379,6 @@ form input[type="email"] {
   background-image: url("../images/contact-header.jpg");
 }
 
-.contact__header .wrapper {
-  position: relative;
-}
-
 .contact__footer {
   padding: 100px 0;
 }
@@ -1461,6 +1462,6 @@ form input[type="email"] {
   }
 }
 
-.about__header .wrapper {
-  position: relative;
+.about__header {
+  min-height: 100vh;
 }
