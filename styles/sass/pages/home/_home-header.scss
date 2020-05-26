@@ -27,6 +27,7 @@
     right: 0;
     z-index: -1;
     width: 40%;
+    
     @include tablet-landscape {
       top: 240px;
     }
@@ -42,6 +43,7 @@
       border-top: 40px solid $accent-secondary;
       border-left: 40px solid $accent-secondary;
       border-bottom: 40px solid $accent-secondary;
+
       @include tablet-landscape-sm {
         border-top: 25px solid $accent-secondary;
         border-left: 25px solid $accent-secondary;

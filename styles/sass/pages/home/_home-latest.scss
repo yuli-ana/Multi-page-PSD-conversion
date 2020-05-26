@@ -4,7 +4,6 @@
     align-items: center;
 
     &--right {
-      // padding: 40px 0; /* Delete */
       padding: 50px;
     }
 
@@ -22,7 +21,6 @@
     }
 
     &--right {
-      // padding-left: 100px; /* Delete */
       @include tablet-landscape {
         padding: 0 0 0 50px;
       }
@@ -31,11 +29,6 @@
     &--left {
       text-align: right;
       padding: 50px;
-      // padding-right: 100px; /* Delete */
-      // padding-top: 20px; /* Delete */
-      // @include tablet-landscape { /* Delete */
-      //   padding: 0 50px 0 0;
-      // }
 
       p {
         text-align: left;
@@ -88,38 +81,7 @@
     .row:first-of-type {
       margin-bottom: 50px;
     }
-
-    // &__img { /* Delete */
-    //   &--left,
-    //   &--right {
-    //     margin: 0;
-    //   }
-    // }
   }
-
-  // @include tablet-landscape-sm {
-  //   &__post {
-  //     &--right,
-  //     &--left {
-  //       padding: 0;
-  //     }
-
-  //     &--left {
-  //       text-align: left;
-  //     }
-
-  //     &--order {
-  //       order: -1;
-  //     }
-  //   }
-
-  //   &__img {
-  //     &--left,
-  //     &--right {
-  //       margin-bottom: 50px;
-  //     }
-  //   }
-  // }
 
   @include tablet-landscape-sm {
     &__img {

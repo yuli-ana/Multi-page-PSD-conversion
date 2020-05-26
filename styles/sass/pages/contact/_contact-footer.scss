@@ -63,11 +63,11 @@
     }
   }
 
-  // @include tablet-landscape { /* Delete */
-  //   padding: 80px 0;
-  // }
-
   @include tablet-portrait {
     padding: 60px 0;
+
+    .social__item {
+      @include fontSize(20);
+    }
   }
 }

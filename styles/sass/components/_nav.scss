@@ -35,8 +35,7 @@
     }
   }
 
-  // &__item a {
-  //   text-transform: uppercase;
-  //   letter-spacing: $space-1;  /* Delete */
-  // }
+  @include tablet-portrait {
+    display: none;
+  }
 }
