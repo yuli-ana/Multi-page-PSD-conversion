@@ -617,16 +617,23 @@ span {
           flex: 0 1 auto;
 }
 
-.nav__item--active {
+.nav__item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  -webkit-transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav__item--active, .nav__item:hover {
   position: relative;
 }
 
-.nav__item--active::after {
-  content: "";
+.nav__item--active::after, .nav__item:hover::after {
   position: absolute;
   bottom: -10px;
-  left: -2px;
-  width: 65px;
+  left: 0;
+  width: 100%;
   height: 3px;
   background: #4ceea7;
 }
