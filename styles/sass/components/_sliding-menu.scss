@@ -1,0 +1,51 @@
+.nav2 {
+  display: none;
+
+  @include tablet-portrait {
+    display: block;
+
+    &__list {
+      position: fixed;
+      top: 20px;
+      left: -30%;
+      width: 30%;
+      background-color: $primary-dark;
+      z-index: 10;
+      transition: all 250ms;
+
+      a {
+        color: $primary-light;
+        display: inline-block;
+        width: 100%;
+        padding: 20px;
+        transition: all 450ms;
+        text-align: center;
+        border-bottom: 1px solid $accent-primary;
+
+        &:hover,
+        &:focus {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    &__item:last-child a {
+      border-bottom: unset;
+    }
+
+    input[type="checkbox"]:checked + &__list {
+      left: 0;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label[for="toggle"] {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      @include fontSize(30);
+    }
+  }
+}
