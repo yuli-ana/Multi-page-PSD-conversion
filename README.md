@@ -1,6 +1,6 @@
-Project 2 (multi-page PSD conversion)
+##Project 2 (multi-page PSD conversion)
 
-https://yuli-ana.github.io/yuliana-hazda-project-two/
+Live site: https://yuli-ana.github.io/yuliana-hazda-project-two/
 
 
 Project Requirements
